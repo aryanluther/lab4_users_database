@@ -1,0 +1,23 @@
+{
+  "name": "lab4_users_database",
+  "version": "1.0.0",
+  "description": "labexc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aryanluther/lab4_users_database.git"
+  },
+  "author": "aryan luthra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aryanluther/lab4_users_database/issues"
+  },
+  "homepage": "https://github.com/aryanluther/lab4_users_database#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.2"
+  }
+}
