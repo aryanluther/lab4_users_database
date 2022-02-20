@@ -5,17 +5,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter the name"],
   },
-  Username: {
+  username: {
     type: String,
     required: [true, "Please enter the username"],
-    validate: {
-      validator: function (val) {
-        return val.length >= 4;
-      },
-      message: () =>
-        `Please enter the username which is larger or equals to 4 characters`,
-    },
-    trim: true,
+    minlength: 4,
   },
   email: {
     type: String,
@@ -53,7 +46,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: [true, "Please enter the latitude"],
       },
-      long: {
+      lng: {
         type: String,
         required: [true, "Please enter the longitude"],
       },
